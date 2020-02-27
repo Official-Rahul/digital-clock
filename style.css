@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c0cfd3;
+    font-family: roboto;
+    font-weight: 100;
+}
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    font-size: 50px;
+}
