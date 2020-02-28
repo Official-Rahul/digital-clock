@@ -7,8 +7,13 @@ setInterval(()=>{
     if(newSec.length==1){
         newSec='0'+newSec;
     }
+    if(newSec=='01'){
+        minDoc.classList.remove('animate');
+        hourDoc.classList.remove('animate');
+    }
     if(newSec=='60'){
         newSec='00';
+        minDoc.classList.add('animate');
         newMin=parseInt(minDoc.innerHTML)+1;
         newMin+='';
         if(newMin.length==1){
@@ -16,6 +21,7 @@ setInterval(()=>{
         }
         if(newMin=='60'){
             newMin='00';
+            hourDoc.classList.add('animate');
             newHour=parseInt(hourDoc.innerHTML)+1;
             newHour+='';
             if(newHour.length==1){

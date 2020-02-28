@@ -23,3 +23,20 @@ body {
     font-size: 40px;
     border-radius: 20px;
 }
+.animate {
+    animation: bounce 1s infinite;
+}
+.bounce {
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 1s;
+    animation-name: bounce;
+    animation-duration: 1s ;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
