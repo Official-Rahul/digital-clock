@@ -27,10 +27,14 @@ setInterval(()=>{
             if(newHour.length==1){
                 newHour='0'+newHour;
             }
+            if(newHour=='24'){
+                newHour='00';
+                newMin='00';
+                newSec='00';
+            }
             hourDoc.innerHTML=newHour;
         }
         minDoc.innerHTML=newMin;
     }
-
     secDoc.innerHTML=newSec;
-}, 1000);
+}, 1);
