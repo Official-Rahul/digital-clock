@@ -37,4 +37,4 @@ setInterval(()=>{
         minDoc.innerHTML=newMin;
     }
     secDoc.innerHTML=newSec;
-}, 1);
+}, 1000);
